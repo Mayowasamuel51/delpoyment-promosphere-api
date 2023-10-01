@@ -42,6 +42,10 @@ require __DIR__.'/../vendor/autoload.php';
 | the application's HTTP kernel. Then, we will send the response back
 | to this client's browser, allowing them to enjoy our application.
 |
+find var/html/ -type d -exec  chmod 755 {} /
+find -type d -exec  chmod 755 {} /
+
+/home/site/wwwroot/public -type d -exec  chmod 755 {} /
 */
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
